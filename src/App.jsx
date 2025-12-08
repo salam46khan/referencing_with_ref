@@ -1,8 +1,11 @@
+import FastRef from "./components/FastRef";
 
 const App = () => {
   return (
     <div>
-      <p>Hello World</p>
+      <h2 style={{textAlign: "center"}}>Referencing Values with Refs</h2>
+      <hr />
+      <FastRef />
     </div>
   );
 };
