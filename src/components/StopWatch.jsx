@@ -1,21 +1,35 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const StopWatch = () => {
+    
     const [now, setNow] = useState(null)
     const [stateTime, setStateTime] = useState(null)
+    let intervalRef = useRef(null)
 
     const handleStart = () => {
         setNow(Date.now())
         setStateTime(Date.now())
 
-        setInterval(() => {
+        intervalRef.current= setInterval(() => {
             setNow(Date.now())
         }, 10);
     }
+
+    const handleStop = () => {
+        clearInterval(intervalRef.current)
+    }
+
+    
+
     console.log(now);
     let secondsPassed = 0;
+    
     if(now !== null & stateTime !== null) {
         secondsPassed = (now - stateTime) / 1000
+    }
+    const handleReset = () => {
+        setNow(null)
+        setStateTime(null)
     }
     return (
         <div>
@@ -23,6 +37,13 @@ const StopWatch = () => {
             <button onClick={handleStart}>
                 Start
             </button>
+            <button onClick={handleStop}>
+                Stop
+            </button>
+            <button onClick={handleReset}>
+                Reset
+            </button>
+
         </div>
     );
 };
