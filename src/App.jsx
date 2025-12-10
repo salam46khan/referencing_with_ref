@@ -1,7 +1,10 @@
 import Chat from "./components/Chat";
 import Dashboard from "./components/Debounce";
 import FastRef from "./components/FastRef";
+import FoursForm from "./components/FoursForm";
 import IsRefRendering from "./components/IsRefRendering";
+import Scroll from "./components/Scroll";
+import ScrollingToView from "./components/ScrollingToView";
 import StopWatch from "./components/StopWatch";
 import Toggle from "./components/Toggle";
 
@@ -10,11 +13,14 @@ const App = () => {
     <div>
       <h2 style={{textAlign: "center"}}>Referencing Values with Refs</h2>
       <hr />
-      <Dashboard />
+      <Scroll />
+      {/* <ScrollingToView /> */}
+      {/* <FoursForm /> */}
+      {/* <Dashboard /> */}
       {/* <Toggle /> */}
       <hr />
       {/* <Chat /> */}
-      <hr />
+      {/* <hr /> */}
       {/* <IsRefRendering />
       <hr />
       <FastRef />
