@@ -1,3 +1,5 @@
+import ParentCompo from "./components/anotherComponent/ParentCompo";
+import CatFriends from "./components/CatFriends";
 import Chat from "./components/Chat";
 import Dashboard from "./components/Debounce";
 import FastRef from "./components/FastRef";
@@ -13,7 +15,9 @@ const App = () => {
     <div>
       <h2 style={{textAlign: "center"}}>Referencing Values with Refs</h2>
       <hr />
-      <Scroll />
+      <ParentCompo />
+      {/* <CatFriends /> */}
+      {/* <Scroll /> */}
       {/* <ScrollingToView /> */}
       {/* <FoursForm /> */}
       {/* <Dashboard /> */}
