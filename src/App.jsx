@@ -3,6 +3,7 @@ import CatFriends from "./components/CatFriends";
 import Chat from "./components/Chat";
 import Dashboard from "./components/Debounce";
 import FastRef from "./components/FastRef";
+import Focus from "./components/Focus";
 import FoursForm from "./components/FoursForm";
 import IsRefRendering from "./components/IsRefRendering";
 import Scroll from "./components/Scroll";
@@ -16,7 +17,8 @@ const App = () => {
     <div>
       <h2 style={{textAlign: "center"}}>Referencing Values with Refs</h2>
       <hr />
-      <VideoPlayer />
+      <Focus />
+      {/* <VideoPlayer /> */}
       {/* <ParentCompo /> */}
       {/* <CatFriends /> */}
       {/* <Scroll /> */}
