@@ -9,13 +9,15 @@ import Scroll from "./components/Scroll";
 import ScrollingToView from "./components/ScrollingToView";
 import StopWatch from "./components/StopWatch";
 import Toggle from "./components/Toggle";
+import VideoPlayer from "./components/VideoPlayer";
 
 const App = () => {
   return (
     <div>
       <h2 style={{textAlign: "center"}}>Referencing Values with Refs</h2>
       <hr />
-      <ParentCompo />
+      <VideoPlayer />
+      {/* <ParentCompo /> */}
       {/* <CatFriends /> */}
       {/* <Scroll /> */}
       {/* <ScrollingToView /> */}
